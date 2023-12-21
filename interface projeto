@@ -1,0 +1,64 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
+#define ROXO "\e[1;34m"
+#define FIM_COR "\e[0m"
+
+void limpartela() {
+#ifdef _WIN32
+    system("cls");
+#else
+    system("clear");
+#endif
+}
+
+void menu() {
+    printf(ROXO"========= Conversor Morse =========\n"FIM_COR);
+    printf("1. Alfanumerico para Morse\n");
+    printf("2. Morse para Alfanumerico\n");
+    printf("0. Sair\n");
+}
+void esperar() {
+    printf(ROXO"\nPressione Enter para continuar..."FIM_COR);
+    while (getchar() != '\n');
+    getchar();  
+}
+int main() {
+    
+    int escolha;
+
+    do {
+        limpartela();
+        menu();
+        printf("Escolha a operacao: ");
+        scanf("%d", &escolha);
+
+        switch (escolha) {
+            case 1:
+                limpartela();
+                printf(ROXO"-------- Alfanumerico para Morse --------\n"FIM_COR);
+                printf("Digite o valor alfanumerico: ");
+                scanf("%s");
+                printf("Resultado em Morse: %s\n");
+                esperar();
+                break;
+            case 2:
+                limpartela();
+                printf(ROXO"------- Morse para Alfanumerico -------\n"FIM_COR);
+                printf("Digite o valor Morse: ");
+                esperar();
+                break;
+            case 0:
+                limpartela();
+                printf(ROXO"Obrigado por utilizar o nosso conversor, ate breve!\n"FIM_COR);
+                break;
+            default:
+                printf(ROXO"Opcao invalida. Tente novamente.\n"FIM_COR);
+                esperar();
+        }
+    } while (escolha != 0);
+
+    return 0;
+}
