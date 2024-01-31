@@ -4,7 +4,7 @@
 
 
 <div align="center">  
-  <img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=emyllisoares&show_icons=true&count_private=true&hide_border=true&title_color=EE82EE&icon_color=EE82EE&text_color=c9d1d9&bg_color=0d1117" alt="Caroline Barbosa github stats" /> 
+  <img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=emyllisoares&show_icons=true&count_private=true&hide_border=true&title_color=EE82EE&icon_color=EE82EE&text_color=c9d1d9&bg_color=0d1117" alt="Emylli Soares github stats" /> 
   <img width="41%" height="195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=emyllisoares&layout=compact&hide_border=true&title_color=EE82EE&text_color=EE82EE&bg_color=0d1117" />
 </div>
 
